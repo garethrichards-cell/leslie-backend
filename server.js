@@ -131,6 +131,11 @@ try {
 
 // API Routes
 
+// Test endpoint
+app.get('/api/test', (req, res)  => {
+  res.json({ status: 'success', message: 'Leslie AI Backend is working properly' });
+});
+
 // Get dashboard overview
 app.get('/api/dashboard', async (req, res) => {
   try {
